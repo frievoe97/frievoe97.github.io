@@ -1,87 +1,262 @@
 <style>
-* {
+/* For all sites */
+html, body {
+	width: 100%;
+	height: 100%;
 	margin: 0;
 	padding: 0;
+	font-style: italic;
+	font-family: 'Work Sans', sans-serif;
 }
 
-body {
+/* For main page (start page?!)*/
+body.start_page {
 	background: white;
-	background-image: radial-gradient(black 1px, transparent 0);
+	background-image: radial-gradient(#a6a6a6 1px, transparent 0);
 	background-size: 40px 40px;
 }
 
+.total {
+	display: grid;
+	height: 100%;
+}
+
+.total.start_page {
+	grid-template-rows: 47px auto;
+	grid-template-columns: 70vw 30vw;
+}
+
+.start_page.main_title {
+	font-size: 100px;
+	grid-row: 1 / 3;
+	grid-column: 1 / 3;
+	align-self: center;
+	justify-self: center;
+}
+
+.start_page.main_nav {
+	margin: 15px; /* Margin zum Rand */
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 1;
+	grid-row-end: 1;
+}
+
+.start_page.main_nav a {
+	margin-right: 15px;
+	float: left;
+	color: black;
+	text-decoration: none;
+	font-size: 17px;
+	letter-spacing: 0.15em;
+	text-decoration-thickness: 2px;
+}
+
+.language {
+	margin: 15px;
+	grid-row: 1;
+	grid-column: 2;
+}
+
+.language a{
+	text-decoration-thickness: 2px;
+	margin-left: 15px;
+	color: black;
+	text-decoration: none;
+	float: right;
+	letter-spacing: 0.15em;
+}
+
+body.other_page  {
+	background: #262626;
+	background-image: radial-gradient(#505050 1px, transparent 0);
+	background-size: 40px 40px;
+	color: white;
+}
+
+.total.other_page {
+	display: grid;
+	grid-template-rows: 150px auto 48px;
+	grid-template-columns: 50px 300px auto 200px;
+}
+
+.other_page.language {
+	grid-row: 1;
+	grid-column: 4;
+}
+
+.other_page.language a{
+	text-decoration-thickness: 2px;
+	margin-left: 15px;
+	color: white;
+	text-decoration: none;
+	float: right;
+	letter-spacing: 0.15em;
+}
+
+.other_page.main_nav {
+	margin: 15px; /* Margin zum Rand */
+	grid-column: 3/5;
+	grid-row: 3;
+}
+
+.other_page.main_nav a {
+	margin-left: 15px;
+	float: right;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+	letter-spacing: 0.15em;
+	text-decoration-thickness: 2px;
+}
+
+.other_page.main_title {
+	background-color: green;
+	float: left;
+	margin: 15px;
+	margin-left: 40px;
+	text-align: left;
+	letter-spacing: 0.2em;
+	grid-row: 1;
+	grid-column: 1/4;
+	font-size: 100px;
+}
 
 
-#title {
-	font-style: italic;
-	font-family: 'Work Sans', sans-serif;
-	font-size: 50px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
+
+
+
+
+
+
+
+
+
+
+div.end.view {
+	grid-row: 2;
+	grid-column: 3;
+}
+
+iframe.end {
+	padding-top: 23px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: left;
+	grid-row: 2;
+	grid-column: 3;
+}
+
+.end.second_nav {
+	margin-right: 30px;
+	grid-row: 2;
+	grid-column: 2;
+}
+
+.end.second_nav a{
+	color: white;
+	text-decoration: none;
+	line-height: 35px;
+	font-size: 25px;
+	margin: 30px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	display: block;
+	width: 250px;
+}
+
+.end.main_title_seccond {
+	margin-left: 20px;
+	color: white;
+	font-size: 15px;
+	letter-spacing: 0.2em;
+	text-decoration: none;
+	grid-column: 1/3;
+	grid-row: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Muss theoretisch 15 pixel nach oben*/
+.main_title {
+	font-size: 100px;
+	grid-row: 2;
+	grid-column: 1 / 3;
+	align-self: center;
+	justify-self: center;
+}
+
+
+
+
+
+.middle_block {
+	padding: 20px;
+	width: 800px;
+	height: 500px;
+	align-self: center;
+	justify-self: center;
+	background-color: rgba(0, 0, 0, 0.1);
+	grid-row: 2;
+	grid-column: 1 / 3;
+}
+
+
+
+p {
+	hyphens: auto; 
+	text-align: justify;
+	line-height: 30px;
 	
 }
 
-.main_title {
-	color: green;
-}
-
-.header_two {
-	font-style: italic;
-	font-family: 'Work Sans', sans-serif;
-	margin-left: 20px;
-	text-align: left;
-	letter-spacing: 0.2em;
-	font-size: 80px;
-}
-/* Add a black background color to the top navigation */
-.topnav {
-	overflow: hidden;
-	position:fixed; 
-	top: 0; 
-	left: 0;
-}
-
-
-#main_block {
-	background: rgba(0, 0, 0, 0.15);
-	height: 700px;
-	width: 1200px;
-	display: flex;
-	margin: auto;
-	margin-top: 100px;
-	margin-right: 50px;
-}
-
-
 /* Style the links inside the navigation bar */
-.topnav a {
-	font-family: 'Work Sans', sans-serif;
-	font-style: italic;
-	float: left;
-	display: block;
-	color: black;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
+
+
+.main_nav a:hover {
+	text-decoration: underline;
+}
+
+.language a:hover {
+	text-decoration: underline;
+}
+
+table.table tfoot .links {
+	text-align: right;
+}
+
+table.table tfoot .links a{
+	display: inline-block;
+	background: #1C6EA4;
+	color: #FFFFFF;
+	padding: 2px 8px;
+	border-radius: 5px;
+}
+
+table {
+	font-size: 20px;
+	grid-row: 2;
+	grid-column: 3;
+	line-height: 40px;
 	letter-spacing: 0.1em;
-	text-underline-position: under;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-	text-decoration: underline;
-
-
-}
-
-/* Add an active class to highlight the current page */
-.topnav a.active {
-	text-decoration: underline;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-	display: none;
 }</style>
