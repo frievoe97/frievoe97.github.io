@@ -28,7 +28,28 @@
 				<a href="aboutme.html">ENG</a>
 			</div>
 			<div class="other_page view">
+			<form id="form">
+				<div class="field">
+					<label for="from_name">Name</label>
+					<input type="text" name="from_name" id="from_name" placeholder="Homer Simpson">
+				</div>
+				<div class="field">
+					<label for="message">Message</label>
+					<input type="text" name="message" id="message" placeholder="How are you?">
+				</div>
+				<div class="field">
+					<label for="reply_to">E-Mail</label>
+					<input type="text" name="reply_to" id="reply_to" placeholder="name@internet.com">
+				</div>
+				<input type="submit" id="button" value="Send Email" >
+			</form>
 			</div>
 		</div>
+		<script type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+		<script type="text/javascript">
+			emailjs.init('user_QbuqseBrsJXfIF3I62607')
+		</script>
+		<script src="email.js"></script>
 	</body>
 </html>

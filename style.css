@@ -238,3 +238,33 @@ table {
 .hover_element a:hover {
 	text-decoration: underline;
 }
+
+/* Table Contact copied */
+.field {
+	margin-bottom: 10px;
+}
+
+.field label {
+	display: block;
+	font-size: 17px;
+}
+
+.field input {
+	display: block;
+	min-width: 250px;
+	line-height: 1.5;
+	font-size: 14px;
+}
+
+::placeholder{
+	color: #cfcfcf;
+	font-family: 'Work Sans', sans-serif;
+}
+
+input[type="submit"] {
+	font-family: 'Work Sans', sans-serif;
+	display: block;
+	padding: 6px 30px;
+	font-size: 14px;
+	border: none
+}
