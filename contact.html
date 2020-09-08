@@ -5,6 +5,22 @@
 		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
 		<meta charset="utf-8">
 		<title>Friedrich Völkers</title>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+			<script type="text/javascript">
+				(function(){
+				   emailjs.init('user_QbuqseBrsJXfIF3I62607');
+				})();
+			</script>
+			<script type="text/javascript">
+				window.onload = function() {
+					document.getElementById('contact_form_id').addEventListener('submit', function(event) {
+						event.preventDefault();
+						// generate the contact number value
+						this.contact_number.value = Math.random() * 100000 | 0;
+						emailjs.sendForm('contact_service', 'contact_form', this);
+					});
+				}
+			</script>
 	</head>
 	<body class="other_page">
 		<div class="total other_page">
@@ -28,12 +44,25 @@
 				<a href="aboutme.html">ENG</a>
 			</div>
 			<div class="other_page view">
-				<form>      
-					<input name="name" type="text" class="feedback-input" placeholder="Name" />   
-					<input name="email" type="text" class="feedback-input" placeholder="Email" />
-					<textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-					<input type="submit" value="SUBMIT"/>
-				</form>
+				<form class="contact_form" id="contact_form_id" action="/action_page.php">
+					<label class="contact_form_element" for="fname">Vorname</label><br>
+					<div class="newline"></div>
+					<input class="contact_form_element" type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+					<div class="newline"></div>
+					<label class="contact_form_element" for="fname">Nachname</label><br>
+					<div class="newline"></div>
+					<input class="contact_form_element" type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+					<div class="newline"></div>
+					<label class="contact_form_element" for="fname">E-Mail</label><br>
+					<div class="newline"></div>
+					<input class="contact_form_element" type="email" id="fname" name="firstname" placeholder="Your name.."><br>
+					<div class="newline"></div>
+					<label class="contact_form_element" for="fname">Nachricht</label><br>
+					<div class="newline"></div>
+					<input class="contact_form_element" type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+					<div class="newline"></div>
+					<input type="submit" value="Send">
+				</form>	
 			</div>
 		</div>
 	</body>
