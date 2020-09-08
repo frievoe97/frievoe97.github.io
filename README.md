@@ -12,9 +12,9 @@ This is my own html portfolio project, which everyone is welcome to use and deve
 
 ### Beta 1
 
-- Grundgerüst
-- Startseite
-- Unterseiten
+- Basic framework
+- Homepage
+- Subpages
 - Layout
 - Contact form via EmailJS and auto response
 
