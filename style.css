@@ -237,21 +237,6 @@ table {
 	grid-column: 3;
 }
 
-.contact_form {
-	font-size: 20px;
-}
-
-.contact_form_element {
-	width: 300px;
-	height: 70px;
-
-}
-
-.newline {
-	margin-bottom: 100px;
-}
-
-
 .hover_element a:hover {
 	text-decoration: underline;
 }
