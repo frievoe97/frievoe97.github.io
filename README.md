@@ -8,3 +8,5 @@ This is my own html portfolio project, which everyone is welcome to use and deve
 - Support for mobile devices
 - Bilingual support (English and German)
 - Better support for smaller screens
+
+### This project is just at the beginning and contains many errors.
