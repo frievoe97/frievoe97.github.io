@@ -10,7 +10,7 @@ This is my own html portfolio project, which everyone is welcome to use and deve
 
 ## Versions
 
-### Beta 1
+### Beta 1 (current)
 
 - Basic framework
 - Homepage
