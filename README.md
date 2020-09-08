@@ -4,9 +4,8 @@ This is my own html portfolio project, which everyone is welcome to use and deve
 
 ## In work
 
-- Contact form (Emailjs)
-- Support for mobile devices
 - Bilingual support (English and German)
+- Support for mobile devices
 - Better support for smaller screens
 
 ## Versions
@@ -17,5 +16,6 @@ This is my own html portfolio project, which everyone is welcome to use and deve
 - Startseite
 - Unterseiten
 - Layout
+- Contact form via EmailJS and auto response
 
 ##### This project is just at the beginning and contains many errors...
