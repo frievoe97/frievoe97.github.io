@@ -1,6 +1,6 @@
 # Portfolio Template
 
-This is my own html portfolio project, which everyone is welcome to use and develop further. If you use this project for your own internet presence, I would be very happy about a mention. The plan for the future is to use a script (possibly via python) with a few inputs from the user (name, email, menu items, etc.) to create and edit an own website. There will be a documentation for the editing. The documentation will be available for download and via the GitHub wiki. To check out the current version you can go to www.friedrichvoelkers.de without checking out the git repository. If you have questions or feedback, feel free to contact me. **Even if you find bugs**. (friedrich.voelkers@me.com)
+This is my own html portfolio project, which everyone is welcome to use and develop further. If you use this project for your own internet presence, I would be very happy about a mention. The plan for the future is to use a script (possibly via python) with a few inputs from the user (name, email, menu items, etc.) to create and edit an own website. There will be a documentation for the editing. The documentation will be available for download and via the GitHub wiki. To see the current version you can go to www.friedrichvoelkers.de without checking out the git repository. If you have questions or feedback, feel free to contact me. **Even if you find bugs**. (friedrich.voelkers@me.com)
 
 To
 
