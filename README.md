@@ -8,7 +8,7 @@ The file config.js should look like this:
 
 ```javascript
 var config = {
-  MY_USER : 'YOUR_USERNAME'
+  MY_USER : 'YOUR_USERNAME' // From your EmailJS-Account for the contact form
 }
 ```
 
