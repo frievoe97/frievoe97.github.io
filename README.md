@@ -25,7 +25,6 @@ var config = {
 
 | Version        | New Features                                                                          | Date       |
 | ---------------|---------------------------------------------------------------------------------------|------------|
-|                                                         Test                                                      |||
 | v0.1 (Coral)   | <ul><li>Rough layout</li><li>Homepage</li><li>Subpages</li><li>Contact form</li></ul> | 09.14.2020 |
 
 
