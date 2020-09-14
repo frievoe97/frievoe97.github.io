@@ -23,7 +23,9 @@ var config = {
 
 ## Versions
 
-### v0.1
+### v0 (Coral)
+
+#### v0.1
 
 - Basic framework
 - Homepage
